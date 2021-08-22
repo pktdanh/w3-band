@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:  Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-2 {
+    width: 50%;
+
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.btn {
+    margin-top: 12px;
+    display: inline-block;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border:solid 1px black;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+
+}
+
+.pull-right {
+    float: right !important;
+}
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.9;
+    /* display: flex; */
+    justify-content: space-between;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+#nav {
+    list-style: none;
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+
+}
+
+
+
+#header .search-btn {
+    padding: 0 21px;
+    float: right;
+}
+
+#header .mobile-menu-btn {
+    float: right;
+    padding: 14px 21px;
+    color: white;
+    display: none;
+}
+
+#header .search-btn:hover {
+    background-color: rgb(196, 5, 5);
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: black;
+}
+
+#header .search-icon {
+    line-height: 46px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav li {
+    display: block;
+    /* width: 100%; */
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+}
+
+
+
+#slider {
+    position: relative;
+    margin-top:46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position:absolute;
+    color: #fff;
+    bottom: 6%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    margin: 10px 0 25px;
+    font-size:24px;
+    font-weight: 500;
+}
+
+#slider .text-body {
+    font-size:15px;
+
+}
+
+#content {
+
+}
+
+#content .content-section {
+    width: 1000px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0 100px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#content .section-heading {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size:32px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#content .section-sub-heading {
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .members-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 48px;
+}
+
+#content .member-item {
+    text-align: center;
+}
+
+#content .member-name {
+
+}
+
+#content .member-img{
+    margin-top: 15px;;
+    width: 212px;
+    border-radius: 50%;
+}
+
+#content .content-section--dark {
+    color: white;
+}
+
+#content .tour-date {
+    background-color: rgb(29, 27, 27);
+}
+
+#content .show-schedule {
+    margin-top: 24px;
+    list-style: none;
+    background-color:white;
+}
+
+#content .schedule-item {
+    align-items: center;
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    border-bottom: solid 1px black;
+    padding: 12px 16px;  
+
+}
+
+#content .sold-out-box {
+    text-align: center;
+    background-color: rgb(148, 11, 11);
+    margin-left: 20px;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 4px;
+}
+
+#content .number-schedule {
+    margin-right: 26px;
+    text-align:center;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    float: right;
+    margin-top: -3px;
+}
+
+#content .schedule-item--special {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .buy-tickets {
+    margin-top: 26px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+#content .buy-ticket-item {
+    width: 32%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+#content .buy-ticket-item:hover {
+    transform: translateY(-2px);
+}
+
+#content .ticket-img {
+    width: 100%;
+}
+
+#content .ticket-heading {
+    margin: 12px 0;
+    font-style: italic;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+#content .ticket-time {
+    font-style: italic;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+
+
+#content .contact-item {
+    font-size: 18px;
+    /* padding: 6px 0; */
+    line-height: 1.5;
+}
+
+#content .contact-icon {
+    width: 20px;
+}
+
+
+
+#content .contact-form {
+    font-size:15px;
+
+}
+
+#content .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+
+
+#map img{
+    width:100%;
+    /* padding-top: 56%; */
+    /* background: url('/assets/img/map/map.jpg') top center / cover no-repeat; */
+    opacity: 0.9;
+}
+
+#footer {
+    padding: 60px 0;
+    opacity: 0.8;
+}
+
+#footer .social-list {
+    text-align: center;
+}
+#footer .social-list a{
+    color: black;
+    font-size: 24px;
+    padding: 0 3px;
+}
+
+#footer .social-list a:hover {
+    opacity: 0.6;
+}
+
+#footer .dev-by {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#footer .dev-by a {
+    color: black;
+}
+
+#footer .dev-by a:hover {
+    opacity: 0.6;
+}
+

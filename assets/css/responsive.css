@@ -1,0 +1,76 @@
+/* Mobile */
+@media (max-width: 740px) {
+
+    #header {
+        /* height:auto; */
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav .subnav {
+        position: initial;
+    }
+
+    #nav .subnav a {
+        padding: 4px 41px;
+        background-color:#000;
+        color: #fff;
+    }
+
+    
+
+    #content .members-list {
+        flex-direction: column;
+    }
+
+    #content .member-item {
+        padding: 30px 0;
+    }
+    #content .buy-tickets {
+        flex-direction: column;
+    }
+    #content .buy-ticket-item {
+        width: auto;
+        margin: 10px 0 ;
+    }
+
+    .s-col-full {
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .mobile-row {
+        flex-direction: column;
+
+    }
+
+    .mobile-mt36 {
+        margin-top: 36px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    
+}
